@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Закирова Ольга</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../styles/zakirova.css">
+</head>
+
+<body class="my_page">
+  <header class="header">
+    <img class="logo" src="../img/hufflepuff.svg" alt="эмблема факультета Пуффендуй">
+    <nav class="navigation">
+      <ul class="menu">
+        <li><a class="link" href="#">Главная</a></li>
+        <li><a class="link active" href="#">Студенты</a></li>
+        <li><a class="link" href="#">О курсе</a></li>
+        <li><a class="link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <a class="login_button" href="#">Войти</a>
+    <div class="login_popup">
+      <h2 class="login_heading">Войти на сайт</h2>
+      <form class="login_form" action="#" method="post" autocomplete="on">
+          <input class="login_input" name="login" type="text" placeholder="Логин" required>
+          <input class="password_input" name="password" type="password" placeholder="Пароль" required>
+          <button class="popup_button" type="submit">Войти</button>
+      </form>
+  </div>
+  </header>
+  <main class="main_about_me">
+    <div class="part1">
+      <nav class="nav">
+        <ul class="list">
+          <li><a class="link2" href="#target1">Краткая информация</a></li>
+          <li><a class="link2" href="#target2">Интересные факты</a></li>
+          <li><a class="link2" href="#target3">Ссылки</a></li>
+          <li><a class="link2" href="#target4">О тебе</a></li>
+        </ul>
+      </nav>
+      <div class="name">
+        <h1 class="main_title">Закирова Ольга</h1>
+        <p class="subtitle">студентка 2 потока курса &quot;Мой первый сайт. Основы веб-вёрстки.&quot;</p>
+      </div>
+    </div>
+    <div class="part2">
+      <div class="information">
+        <h2 class="title" id="target1">Краткая информация:</h2>
+        <ol class="info">
+          <li>ФИО: Закирова Ольга Сергеевна.</li>
+          <li>Дата рождения: 10.01.1991.</li>
+          <li>Образование: бакалавр психологии, РГПУ им. Герцена.</li>
+          <li>Повышение квалификации: психоаналитик, ВЕИП.</li>
+        </ol>
+        <h2 class="title" id="target2">Интересные факты:</h2>
+        <ul class="facts">
+          <li>Состою в браке уже 6 лет.</li>
+          <li>Есть ребёнок, дочь по имени Сора (яп. <q>небо</q>, кор. <q>ракушка</q>).</li>
+          <li>Мой отец - детский писатель Сергей Булыгинский.</li>
+          <li>Оставила сферу психологии и решила заняться деятельностью, связанной с машинами, а не с людьми.</li>
+          <li>У меня есть питомец - змея породы маисовый полоз.</li>
+          <li>Одно из моих любимейших занятий - чтение книг.</li>
+        </ul>
+        <h2 class="title" id="target3">Ссылки:</h2>
+        <ul class="reference">
+          <li><a class="link3" href="https://vk.com/olia_chiffa">Моя страница Вконтакте</a></li>
+          <li><a class="link3" href="https://vk.com/dedskazitel">Папина группа Вконтакте</a></li>
+        </ul>
+      </div>
+      <img class="photo" src="../img/me.jpg" alt="моё фото на берегу Финского залива">
+    </div>
+    <h2 class="title" id="target4">О тебе</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset class="form">
+        <legend class="tell_me">Расскажи немного о себе</legend>
+        <label class="label" for="username">
+          <span>Представься</span>
+          <input id="username" type="text" placeholder="Ибрагим" required>
+        </label>
+        <label class="label" for="email">
+          <span>Ваша почта</span>
+          <input type="email" id="email" placeholder="my@email.com">
+        </label>
+        <label class="label" for="movie">
+          <span>Любимый фильм</span>
+          <input type="text" id="movie" placeholder="Три билборда на границе">
+        </label>
+        <label class="label" for="book">
+          <span>Любимая книга</span>
+          <input type="text" id="book" placeholder="Кошмары аиста Марабу">
+        </label>
+        <label class="checkbox" for="on">
+          <span>Хочу с тобой дружить!</span>
+          <input type="checkbox" id="on">
+        </label>
+        <label class="textarea" for="story">
+          <span>Оставь свой комментарий или вопрос:</span>
+          <textarea class="story" name="story" id="story" cols="50"
+            rows="10">Почему люди не летают, как птицы?</textarea>
+        </label>
+        <button type="submit">готово</button>
+      </fieldset>
+    </form>
+    <p class="quote">&quot;Я говорю вам: нужно носить в себе ещё хаос, чтобы быть в состоянии родить танцующую
+      звезду.&quot; Фридрих
+      Ницше</p>
+  </main>
+  <footer class="footer">
+    <p class="copyright"><span>2022 &copy; </span><a class="innopolis" href="https://innopolis.university/ooc/">учебный
+        центр</a></p>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
