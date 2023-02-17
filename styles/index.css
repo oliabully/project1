@@ -185,6 +185,11 @@ header {
     line-height: 29px;
     margin-bottom: 10px;
 }
+.study {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .intro_text {
     width: 100%;
     max-width: 634px;
@@ -193,6 +198,10 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+}
+.motto {
+    max-width: 183px;
+    max-height: 125px;
 }
 em {
     color: #CF5510
@@ -290,7 +299,7 @@ em {
         max-width: 140px;
     }
 }
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 528px) {
     .logo {
         margin-bottom: 16px;
     }
@@ -304,5 +313,12 @@ em {
     }
     .link {
         min-height: 50px;
+    }
+    .study {
+        display: block;
+    }
+    .motto {
+        display: block;
+        margin: 0 auto;
     }
    }
