@@ -6,7 +6,9 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    min-width: 350px;
+    min-width: 400px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
 }
 /* Header */
 header {
@@ -48,7 +50,6 @@ header {
     transition: background-color 0.5s;
     font-weight: 400;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 .active {
     display: flex;
@@ -73,7 +74,6 @@ header {
     min-height: 50px;
     font-weight: 400;
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
 }
 /* PopUp */
 .login_popup {
@@ -106,7 +106,6 @@ header {
     text-align: center;
     margin-bottom: 36px;
     color: #000000;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -125,7 +124,6 @@ header {
 }
 .login_input {
     padding: 17px 14px 10px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -133,7 +131,6 @@ header {
 }
 .password_input {
     padding: 17px 14px 10px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -146,7 +143,6 @@ header {
     cursor: pointer;
     color: #FFFFFF;
     background-color: #EA5D21;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -162,7 +158,7 @@ header {
     width: 100%;
     max-width: 1300px;
     padding: 0 16px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
 }
 .main_first_page {
     max-width: 943px;
@@ -171,7 +167,6 @@ header {
     width: 100%;
     max-width: 911px;
     margin-bottom: 25px;
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -180,12 +175,10 @@ header {
 .students {
     width: 100%;
     max-width: 523px;
-    /* height: auto; */
     aspect-ratio: auto 1/1;
     margin-bottom: 15px;
 }
 .middle_title {
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
@@ -196,7 +189,6 @@ header {
     width: 100%;
     max-width: 634px;
     margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -205,6 +197,51 @@ header {
 em {
     color: #CF5510
     }
+
+/* Students*/
+.main_second_page {
+    max-width: 1234px;
+}
+.students_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+.special {
+    position: relative;
+}
+.special::after {
+    content: 'староста';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(15px, -50%);
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px 5px;
+    color: #FFFFFF;
+    background-color: #3AA828;
+}
+.student_photo {
+    width: 200px;
+    height: 270px;
+    object-fit: cover;
+}
+.student_name {
+    max-width: 200px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
 
 /* Footer */
 .footer {
@@ -222,7 +259,6 @@ em {
 }
 .copyright {
     color: rgba(255, 255, 255, 0.5);
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -246,8 +282,15 @@ em {
         min-height: 45px;
         margin-bottom: 16px;
     }
+    .student_photo {
+        width: 140px;
+        height: 200px;
+    }
+    .student_name {
+        max-width: 140px;
+    }
 }
-@media screen and (max-width: 508px) {
+@media screen and (max-width: 525px) {
     .logo {
         margin-bottom: 16px;
     }
