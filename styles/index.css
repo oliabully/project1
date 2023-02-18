@@ -252,6 +252,17 @@ em {
     line-height: 23px;
 }
 
+/* About */
+.main_third_page {
+    max-width: 908px;
+}
+/* .video {
+    width: 820px;
+    height: 460px;
+    background-color: #000000;
+    border: 2px solid #EA5D21;
+} */
+
 /* Footer */
 .footer {
     display: flex;
