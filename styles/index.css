@@ -263,6 +263,26 @@ em {
     border: 2px solid #EA5D21;
 } */
 
+/* Contacts */
+.map {
+    width: 1268px;
+    height: 370px;
+}
+.margin {
+    margin-left: 16%;
+}
+.contact_info {
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.phone_number {
+    margin-top: 26px;
+    text-decoration: underline;
+}
+
 /* Footer */
 .footer {
     display: flex;
