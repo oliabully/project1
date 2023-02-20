@@ -445,12 +445,6 @@ em {
     border-radius: 5px;
 }
 
-.checkbox {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
 .textarea {
     display: inline-block;
     width: 100%;
@@ -483,12 +477,12 @@ input {
 }
 
 .story {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    font-style: italic;
     font-weight: 500;
     font-size: 25px;
     background-image: url(../img/background3.jpg);
     background-size: cover;
+    color: #FFFFFF;
 }
 
 .quote {
