@@ -88,6 +88,11 @@ header {
     min-height: 50px;
     font-weight: 400;
     font-size: 18px;
+    transition: transform 0.5s;
+}
+
+.login_button:hover {
+    transform: scale(110%);
 }
 
 /* PopUp */
@@ -116,6 +121,27 @@ header {
     background-image: url(../img/cross.jpg);
     background-size: cover;
     border: 2px solid #808080;
+    animation: square-to-circle 2s infinite alternate linear;
+}
+
+@keyframes square-to-circle {
+    from {
+        border-radius: 0px;
+        border-color: #808080;
+        transform: rotate(0deg);
+    }
+    50% {
+        border-radius: 25%;
+        border-color: #EA5D21;
+        transform: rotate(180deg);
+
+    }
+    to {
+        border-radius: 50%;
+        border-color: #213B7E;
+        transform: rotate(360deg);
+
+    }
 }
 
 .login_heading {
@@ -230,6 +256,12 @@ header {
 .motto {
     max-width: 183px;
     max-height: 125px;
+    transition: transform 2s;
+}
+
+.motto:hover {
+    transform: rotateY(360deg);
+
 }
 
 em {
