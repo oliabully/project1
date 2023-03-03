@@ -96,8 +96,17 @@ header {
 }
 
 /* PopUp */
-.login_popup {
+.overflow {
     display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.login_popup {
     position: absolute;
     top: 160px;
     left: 50%;
@@ -121,6 +130,9 @@ header {
     background-image: url(../img/cross.jpg);
     background-size: cover;
     border: 2px solid #808080;
+}
+
+.close_button:hover {
     animation: square-to-circle 2s infinite alternate linear;
 }
 

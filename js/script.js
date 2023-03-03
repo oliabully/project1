@@ -1,5 +1,5 @@
 let loginButton = document.querySelector('.login_button');
-let loginPopUp = document.querySelector('.login_popup');
+let loginPopUp = document.querySelector('.overflow');
 let closeButton = document.querySelector('.close_button');
 
 loginButton.addEventListener('click', showPopUp);
